@@ -1,0 +1,11 @@
+{
+  "name": "spotify-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Simon Lang <simon.lang@cambia.org>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3"
+  }
+}
