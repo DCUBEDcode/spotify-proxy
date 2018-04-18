@@ -15,7 +15,6 @@ app.use((req, res, next) => {
     return axios({url, headers}).then(response => {
         res.send(response.data)
         // return response.data.pipe(res)
-        // return res.send(d)
     })
 })
 
