@@ -1,5 +1,6 @@
 
 const PORT = process.env.PORT || 5000
+const OAUTH_TOKEN = process.env.OAUTH_TOKEN
 const express = require('express')
 const axios = require('axios')
 const app = express()
@@ -8,7 +9,7 @@ app.use((req, res, next) => {
     const headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer BQBDVFaUTU59TnKQYfWU14UVvbDa1fC8h8UsX9hf-ZRHPAHAqQNFBf4EbvuCcsshEmF37wV8L7V4ZUBQ1bdB4gYvwF-Urj06EhR9nUllHVTwZO5uIzwvPFtUcfKmWp1Qy6YQXNwMZQBwqb3Q',
+        'Authorization': 'Bearer ' + OAUTH_TOKEN,
     }
     const url = 'https://api.spotify.com' + req.url
     console.log(url)
